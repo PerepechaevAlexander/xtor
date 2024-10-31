@@ -18,7 +18,7 @@ public class DbContext : IDbContext
 
     public DbContext(IMongoDatabase database)
     {
-        _products = database.GetCollection<Product>(CollectionNameEnum.PRODUCT);
+        // _products = database.GetCollection<Product>(CollectionNameEnum.PRODUCT);
         _categories = database.GetCollection<Category>(CollectionNameEnum.CATEGORY);
         _templates = database.GetCollection<SpecificationTemplate>(CollectionNameEnum.SPECIFICATION_TEMPLATE);
     }
